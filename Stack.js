@@ -1,5 +1,5 @@
 /**
- ** Stacks are build in Data Structure in JavaScript
+ ** Stacks are built in Data Structure in JavaScript
  ** Arrays in JavaScricp works as Stack.
  ** Stacks Are first in Last out.
  * */
@@ -29,7 +29,7 @@ class Stack {
 	}
 }
 
-const myStack = new Stack();
+const myStack = new Stack(); //implementation
 myStack.push(1); //add element to tha last
 myStack.push(2);
 console.log(myStack.peek()); // returns the last element
