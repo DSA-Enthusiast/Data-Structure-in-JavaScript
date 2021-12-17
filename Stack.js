@@ -3,7 +3,7 @@
  ** Arrays in JavaScricp works as Stack.
  ** Stacks Are first in Last out.
  * */
-class Stack {
+export default class Stack {
 	constructor() {
 		this.count = 0;
 		this.storage = {};
@@ -29,9 +29,9 @@ class Stack {
 	}
 }
 
-const myStack = new Stack(); //implementation
-myStack.push(1); //add element to tha last
-myStack.push(2);
-console.log(myStack.peek()); // returns the last element
-console.log(myStack.pop()); // removes and returns the last element
-console.log(myStack.peek());
+// const myStack = new Stack(); //implementation
+// myStack.push(1); //add element to tha last
+// myStack.push(2);
+// console.log(myStack.peek()); // returns the last element
+// console.log(myStack.pop()); // removes and returns the last element
+// console.log(myStack.peek());

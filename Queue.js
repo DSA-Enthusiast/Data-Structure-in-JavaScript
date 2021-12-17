@@ -2,7 +2,7 @@
  * *
  * * Queue is First in First out Data Structure.
  */
-class Queue {
+export default class Queue {
 	constructor() {
 		this.collection = [];
 	}
@@ -25,10 +25,3 @@ class Queue {
 		return this.collection.length === 0;
 	}
 }
-const queue = new Queue();
-queue.enqueue("a");
-queue.enqueue("b");
-queue.enqueue("c");
-
-queue.print();
-console.log(queue.dequeue());

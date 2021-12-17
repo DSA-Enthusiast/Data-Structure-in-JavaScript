@@ -1,0 +1,21 @@
+{
+	"name": "data-structure-in-javascript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DSA-Enthusiast/Data-Structure-in-JavaScript.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/DSA-Enthusiast/Data-Structure-in-JavaScript/issues"
+	},
+	"homepage": "https://github.com/DSA-Enthusiast/Data-Structure-in-JavaScript#readme"
+}

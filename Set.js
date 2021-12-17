@@ -5,7 +5,7 @@
  ** ES6 has a built in implementation of Set
  */
 
-class MySet {
+export default class MySet {
 	constructor() {
 		this.collection = [];
 	}
@@ -77,11 +77,12 @@ class MySet {
 		});
 	}
 }
-const setA = new MySet();
-const setB = new MySet();
-setA.add("a");
-setB.add("b");
-setB.add("c");
-setB.add("a");
-setB.add("d");
-console.log(setB.difference(setA));
+
+// const setA = new MySet();
+// const setB = new MySet();
+// setA.add("a");
+// setB.add("b");
+// setB.add("c");
+// setB.add("a");
+// setB.add("d");
+// console.log(setB.difference(setA));
