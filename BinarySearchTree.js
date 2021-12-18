@@ -9,13 +9,14 @@ class BST {
 	constructor() {
 		this.root = null;
 	}
+
 	add(data) {
 		const node = this.root;
 		if (node === null) {
 			this.root = new Node(data);
 			return;
 		} else {
-			const searchTree = function (node) {
+			const searchTree = (node) => {
 				if (data < node.data) {
 					if (node.left === null) {
 						node.left = new Node(data);
@@ -84,6 +85,35 @@ class BST {
 			if (node === null) {
 				return null;
 			}
+			// node has no children
+			if (data === node.data) {
+				if (node.left === null && node.right === null) {
+					return null;
+				}
+				// node has no left child
+				if (node.left === null) {
+					return node.right;
+				}
+				// node has no right child
+				if (node.right === null) {
+					return node.left;
+				}
+				// node has two children
+				let tempNode = node.right;
+				while (tempNode !== null) {
+					tempNode = tempNode.left;
+				}
+				node.data = tempNode.data;
+				node.right = removeNode(node.right, tempNode.data);
+				return node;
+			} else if (data < node.data) {
+				node.left = removeNode(node.left, data);
+				return node;
+			} else {
+				node.right = removeNode(node.right, data);
+				return node;
+			}
 		};
+		this.root = removeNode(this.root, data);
 	}
 }
